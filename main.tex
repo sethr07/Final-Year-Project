@@ -1,0 +1,146 @@
+%%Root file for pdf
+\documentclass[11pt, a4paper, oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[export]{adjustbox}
+\usepackage{import}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{subfig}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{geometry}
+\geometry{
+    left=2cm,
+    right=2cm,
+    top=2cm,
+    bottom=2cm,
+    bindingoffset=0mm
+}
+\usepackage{fancyhdr} 
+\usepackage[super]{nth}
+\fancyhf{}
+\cfoot{\thepage}
+\pagestyle{plain} 
+\usepackage{afterpage}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{color}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+\setlength{\parindent}{4em}      
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+
+\begin{document}
+\sloppy
+\bgroup %% <<<<<<< begin a group
+\linespread{0}
+\thispagestyle{empty}
+\begin{center}
+{\sffamily
+%{\Large University of Dublin}
+
+\vspace{10pt}
+
+\includegraphics[scale=1.1]{tcd.png}
+
+\vspace{10pt}
+
+%{\Huge TRINITY COLLEGE}
+
+\vspace{80pt}
+
+\textbf{ \Large \emph Identifying Clusters of Reused Cryptographic Keys}
+
+\vspace{30pt}
+
+Rahul Seth 
+
+B.A.I Computer and Electronics 
+
+Final Year Project 
+
+April 2022
+
+Supervisor: Dr. Stephen Farrell
+
+\vspace{110pt}
+
+\large{School of Computer Science and Statistics
+\\$ $\\
+O'Reilly Institute, Trinity College, Dublin 2, Ireland}
+\linespread{1}
+}
+\end{center}
+\egroup %% <<<<<<< end a group
+
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{Declaration} 
+\chapter*{Declaration}
+\input{declration}
+
+\addcontentsline{toc}{chapter}{Abstract} 
+\chapter*{Abstract}
+\input{abstract}
+
+\addcontentsline{toc}{chapter}{Acknowledgements} 
+\chapter*{Acknowledgements}
+\input{acks}
+\addcontentsline{toc}{chapter}{List of Acronyms} 
+\chapter*{List of Acronyms}
+\input{acronyms}
+\listoffigures
+\listoftables
+\lstlistoflistings
+\tableofcontents
+\pagenumbering{arabic}
+\chapter{Introduction}
+\input{introduction}
+\chapter{Background}
+\input{background}
+\chapter{Related Work}
+\input{litreview}
+\chapter{Implementation}
+\input{implementation}
+\chapter{Results and Discussion} 
+\input{results}
+\chapter{Conclusions and Future Work}
+\input{conclusion}
+\addcontentsline{toc}{chapter}{Bibliography} 
+\bibliographystyle{apalike}
+\bibliography{refs}
+\addcontentsline{toc}{chapter}{Appendix} 
+\appendix
+\chapter{Sample Scan Data}
+\input{a1}
+\end{document}
