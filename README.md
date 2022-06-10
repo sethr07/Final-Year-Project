@@ -1,6 +1,6 @@
 # Final-Year-Project
 
-## Final Year Project as part of B.A.I Engineering. 
+## Final Year Project as part of B.A.I Engineering Degree at Trinity. 
 
 Internet Scanning is used for a variety of purposes. While some may use it to detect and investigate flaws and 
 vulnerabilities in a network, others may exploit them. This project aims to migrate, refactor, optimise the existing program,
